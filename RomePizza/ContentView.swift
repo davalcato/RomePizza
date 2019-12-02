@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    var pizzas:Int
     var body: some View {
         Text("Hello, World!")
     }
@@ -16,6 +17,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(pizzas: 5)
     }
 }
