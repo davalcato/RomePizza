@@ -12,13 +12,16 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Rome Pizza Company")
+                .font(.title)
             Image("Surf Board")
                 .resizable()    
                 .scaledToFit()
             Text("Order Pizza")
+                .font(.largeTitle)
             Spacer()
             
         }
+            .padding()
     }
 }
 
