@@ -13,6 +13,8 @@ struct ContentView: View {
         VStack {
             Text("Rome Pizza Company")
             Image("Surf Board")
+                .resizable()    
+                .scaledToFit()
             Text("Order Pizza")
             Spacer()
             
