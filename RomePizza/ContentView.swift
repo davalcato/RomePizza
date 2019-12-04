@@ -24,7 +24,14 @@ struct ContentView: View {
                 Text("Rome Chicken Pizza")
             }
             Spacer()
-            
+            Text("Your Order")
+            HStack {
+                Text("Your order item here")
+                Spacer()
+                Text("$0.00")
+               
+            }
+            Spacer()
         }
             .padding()
     }
