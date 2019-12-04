@@ -26,9 +26,11 @@ struct ContentView: View {
                 Image("1_100w")
                     VStack {
                         Text("Rome Chicken Pizza")
-                        ForEach(0..<4){item in
-                            Image("Pizza Slice")
-                            
+                        HStack {
+                            ForEach(0..<4){item in
+                                Image("Pizza Slice")
+                                
+                            }
                         }
                     }
                 Spacer()
