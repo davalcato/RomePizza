@@ -20,23 +20,28 @@ struct ContentView: View {
             }
                         Text("Order Pizza")
                 .font(.largeTitle)
-            Spacer()
-            HStack(alignment:.top) {
+            Text("Menu")
+            List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
                 Image("1_100w")
                 Text("Rome Chicken Pizza")
+                Spacer()
             }
             Spacer()
             Text("Your Order")
-            HStack(alignment:.firstTextBaseline) {
-                Text("Your order item here")
-                Spacer()
-                Text("$0.00")
-               
+            List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+                HStack(alignment:.firstTextBaseline) {
+                    Text("Your order item here")
+                    Spacer()
+                    Text("$0.00")
+                    
+                }
+                
             }
-            Spacer()
             
+            Spacer()
         }
             .padding()
+            
     }
     
 }
