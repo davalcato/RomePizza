@@ -15,23 +15,19 @@ struct ContentView: View {
                 Image("Surf Board")
                 .resizable()
                 .scaledToFit()
-                
-            }
-            
-            
-            Text("Rome Pizza Company")
+                Text("Rome Pizza Company")
                 .font(.title)
-            
-            Text("Order Pizza")
+            }
+                        Text("Order Pizza")
                 .font(.largeTitle)
             Spacer()
-            HStack {
+            HStack(alignment:.top) {
                 Image("1_100w")
                 Text("Rome Chicken Pizza")
             }
             Spacer()
             Text("Your Order")
-            HStack {
+            HStack(alignment:.firstTextBaseline) {
                 Text("Your order item here")
                 Spacer()
                 Text("$0.00")
