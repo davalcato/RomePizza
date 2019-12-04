@@ -19,6 +19,11 @@ struct ContentView: View {
             Text("Order Pizza")
                 .font(.largeTitle)
             Spacer()
+            HStack {
+                Image("1_100w")
+                Text("Rome Chicken Pizza")
+            }
+            Spacer()
             
         }
             .padding()
@@ -27,10 +32,13 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+        Group{
+        ContentView()
         ContentView()
             .colorScheme(.dark)
             .background(Color.black)
             .previewDevice("iPad Pro (9.7-inch)")
-        
+            
+        }
     }
 }
