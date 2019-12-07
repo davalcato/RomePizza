@@ -13,7 +13,7 @@ struct MenuListView: View {
         VStack {
             HStack {
                 Text("Menu")
-                    .padding()
+                    .padding([.leading, .top], 30)
                 Spacer()
             }
             List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
