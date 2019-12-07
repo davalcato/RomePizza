@@ -23,6 +23,7 @@
 		756F34EA239B337700EEE197 /* HistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34E9239B337700EEE197 /* HistoryRowView.swift */; };
 		756F34EC239B346F00EEE197 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34EB239B346F00EEE197 /* HistoryListView.swift */; };
 		756F34EE239B34FE00EEE197 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34ED239B34FE00EEE197 /* HistoryView.swift */; };
+		756F34F0239B3A1F00EEE197 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34EF239B3A1F00EEE197 /* ListHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		756F34E9239B337700EEE197 /* HistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRowView.swift; sourceTree = "<group>"; };
 		756F34EB239B346F00EEE197 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
 		756F34ED239B34FE00EEE197 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		756F34EF239B3A1F00EEE197 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		756F34C223948BF500EEE197 /* RomePizza */ = {
 			isa = PBXGroup;
 			children = (
+				756F34EF239B3A1F00EEE197 /* ListHeaderView.swift */,
 				756F34DF239850B000EEE197 /* ContentHeaderView.swift */,
 				756F34C723948BF500EEE197 /* ContentView.swift */,
 				756F34E723985A2300EEE197 /* PageTitleView.swift */,
@@ -215,6 +218,7 @@
 				756F34EE239B34FE00EEE197 /* HistoryView.swift in Sources */,
 				756F34DC23984D6600EEE197 /* OrderListView.swift in Sources */,
 				756F34E0239850B000EEE197 /* ContentHeaderView.swift in Sources */,
+				756F34F0239B3A1F00EEE197 /* ListHeaderView.swift in Sources */,
 				756F34E62398581200EEE197 /* RatingsView.swift in Sources */,
 				756F34E42398579300EEE197 /* MenuRowView.swift in Sources */,
 				756F34C623948BF500EEE197 /* SceneDelegate.swift in Sources */,
