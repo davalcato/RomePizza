@@ -23,5 +23,6 @@ struct OrderRowView: View {
 struct OrderRowView_Previews: PreviewProvider {
     static var previews: some View {
         OrderRowView()
+            .environment(\.sizeCategory, .accessibilityExtraExtraLarge)
     }
 }
