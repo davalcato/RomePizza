@@ -11,11 +11,7 @@ import SwiftUI
 struct MenuListView: View {
     var body: some View {
         VStack {
-            HStack {
-                Text("Menu")
-                    .padding(.leading,5)
-                Spacer()
-            }
+            ListHeaderView()
             List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
                 MenuRowView()
             }
@@ -30,3 +26,13 @@ struct MenuListView_Previews: PreviewProvider {
 }
 
 
+
+struct ListHeaderView: View {
+    var body: some View {
+        HStack {
+            Text("Menu")
+                .padding(.leading,5)
+            Spacer()
+        }
+    }
+}
