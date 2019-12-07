@@ -10,7 +10,10 @@ import SwiftUI
 
 struct HistoryRowView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment:.top) {
+            Image("1_100w")
+            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        }
     }
 }
 
