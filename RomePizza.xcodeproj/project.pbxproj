@@ -20,6 +20,7 @@
 		756F34E42398579300EEE197 /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34E32398579300EEE197 /* MenuRowView.swift */; };
 		756F34E62398581200EEE197 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34E52398581200EEE197 /* RatingsView.swift */; };
 		756F34E823985A2300EEE197 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34E723985A2300EEE197 /* PageTitleView.swift */; };
+		756F34EA239B337700EEE197 /* HistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34E9239B337700EEE197 /* HistoryRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		756F34E32398579300EEE197 /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
 		756F34E52398581200EEE197 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 		756F34E723985A2300EEE197 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		756F34E9239B337700EEE197 /* HistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		756F34D723984CE000EEE197 /* HistoryView */ = {
 			isa = PBXGroup;
 			children = (
+				756F34E9239B337700EEE197 /* HistoryRowView.swift */,
 			);
 			path = HistoryView;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				756F34C423948BF500EEE197 /* AppDelegate.swift in Sources */,
+				756F34EA239B337700EEE197 /* HistoryRowView.swift in Sources */,
 				756F34DE23984F1500EEE197 /* MenuListView.swift in Sources */,
 				756F34E823985A2300EEE197 /* PageTitleView.swift in Sources */,
 				756F34DC23984D6600EEE197 /* OrderListView.swift in Sources */,
