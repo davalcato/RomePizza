@@ -21,6 +21,7 @@
 		756F34E62398581200EEE197 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34E52398581200EEE197 /* RatingsView.swift */; };
 		756F34E823985A2300EEE197 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34E723985A2300EEE197 /* PageTitleView.swift */; };
 		756F34EA239B337700EEE197 /* HistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34E9239B337700EEE197 /* HistoryRowView.swift */; };
+		756F34EC239B346F00EEE197 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34EB239B346F00EEE197 /* HistoryListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		756F34E52398581200EEE197 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 		756F34E723985A2300EEE197 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		756F34E9239B337700EEE197 /* HistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRowView.swift; sourceTree = "<group>"; };
+		756F34EB239B346F00EEE197 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				756F34E9239B337700EEE197 /* HistoryRowView.swift */,
+				756F34EB239B346F00EEE197 /* HistoryListView.swift */,
 			);
 			path = HistoryView;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				756F34E62398581200EEE197 /* RatingsView.swift in Sources */,
 				756F34E42398579300EEE197 /* MenuRowView.swift in Sources */,
 				756F34C623948BF500EEE197 /* SceneDelegate.swift in Sources */,
+				756F34EC239B346F00EEE197 /* HistoryListView.swift in Sources */,
 				756F34E2239856EB00EEE197 /* OrderRowView.swift in Sources */,
 				756F34C823948BF500EEE197 /* ContentView.swift in Sources */,
 			);
