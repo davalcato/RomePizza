@@ -24,6 +24,8 @@ struct HistoryView_Previews: PreviewProvider {
         Group {
             HistoryView()
             HistoryView()
+                .colorScheme(.dark)
+                .background(Color.black)
         }
     }
 }
