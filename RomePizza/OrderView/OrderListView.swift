@@ -12,7 +12,7 @@ struct OrderListView: View {
     var body: some View {
         VStack {
             Spacer()
-            Text("Your Order")
+            ListHeaderView(text: "Your Order")
             List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
                 OrderRowView()
             }
