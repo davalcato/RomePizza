@@ -25,14 +25,3 @@ struct MenuListView_Previews: PreviewProvider {
     }
 }
 
-
-
-struct ListHeaderView: View {
-    var body: some View {
-        HStack {
-            Text("Menu")
-                .padding(.leading,5)
-            Spacer()
-        }
-    }
-}

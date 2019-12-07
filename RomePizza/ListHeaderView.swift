@@ -9,13 +9,18 @@
 import SwiftUI
 
 struct ListHeaderView: View {
+    var text:String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text(text)
+                .padding(.leading,5)
+            Spacer()
+        }
     }
 }
 
 struct ListHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        ListHeaderView()
+        ListHeaderView(text:"Menu")
     }
 }
