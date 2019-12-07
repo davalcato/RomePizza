@@ -17,6 +17,7 @@ struct ContentHeaderView: View {
                 .scaledToFit()
                 Text("Rome Pizza Company")
                 .font(.title)
+                    .foregroundColor(.white)
             }
         }
     }
