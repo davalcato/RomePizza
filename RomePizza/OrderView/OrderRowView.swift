@@ -12,7 +12,7 @@ struct OrderRowView: View {
     var body: some View {
         HStack(alignment:.firstTextBaseline) {
             Text("Your order item here")
-                .fontWeight(.bold)
+                .font(.headline)
             Spacer()
             Text("$0.00")
             .bold()
