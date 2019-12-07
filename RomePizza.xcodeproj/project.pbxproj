@@ -77,8 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				756F34DF239850B000EEE197 /* ContentHeaderView.swift */,
-				756F34E723985A2300EEE197 /* PageTitleView.swift */,
 				756F34C723948BF500EEE197 /* ContentView.swift */,
+				756F34E723985A2300EEE197 /* PageTitleView.swift */,
 				756F34DA23984D0B00EEE197 /* OrderView */,
 				756F34D923984D0000EEE197 /* MenuView */,
 				756F34D823984CF500EEE197 /* Model */,
