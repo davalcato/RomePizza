@@ -12,7 +12,7 @@ struct RatingsView: View {
     var body: some View {
         HStack {
             ForEach(0..<4){item in
-                Image("Pizza Slice")
+                Image(systemName:"star.circle")
                 
             }
         }
