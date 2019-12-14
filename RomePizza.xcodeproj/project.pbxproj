@@ -24,6 +24,7 @@
 		756F34EC239B346F00EEE197 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34EB239B346F00EEE197 /* HistoryListView.swift */; };
 		756F34EE239B34FE00EEE197 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34ED239B34FE00EEE197 /* HistoryView.swift */; };
 		756F34F0239B3A1F00EEE197 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F34EF239B3A1F00EEE197 /* ListHeaderView.swift */; };
+		7593073023A5861800C59A94 /* SelectedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7593072F23A5861800C59A94 /* SelectedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		756F34EB239B346F00EEE197 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
 		756F34ED239B34FE00EEE197 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		756F34EF239B3A1F00EEE197 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
+		7593072F23A5861800C59A94 /* SelectedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				756F34C323948BF500EEE197 /* AppDelegate.swift */,
 				756F34C523948BF500EEE197 /* SceneDelegate.swift */,
 				756F34C923948BF900EEE197 /* Assets.xcassets */,
+				7593072F23A5861800C59A94 /* SelectedImageView.swift */,
 				756F34CE23948BF900EEE197 /* LaunchScreen.storyboard */,
 				756F34D123948BF900EEE197 /* Info.plist */,
 				756F34CB23948BF900EEE197 /* Preview Content */,
@@ -218,6 +221,7 @@
 				756F34EE239B34FE00EEE197 /* HistoryView.swift in Sources */,
 				756F34DC23984D6600EEE197 /* OrderListView.swift in Sources */,
 				756F34E0239850B000EEE197 /* ContentHeaderView.swift in Sources */,
+				7593073023A5861800C59A94 /* SelectedImageView.swift in Sources */,
 				756F34F0239B3A1F00EEE197 /* ListHeaderView.swift in Sources */,
 				756F34E62398581200EEE197 /* RatingsView.swift in Sources */,
 				756F34E42398579300EEE197 /* MenuRowView.swift in Sources */,
