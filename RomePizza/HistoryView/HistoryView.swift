@@ -14,6 +14,8 @@ struct HistoryView: View {
             
             ContentHeaderView()
             PageTitleView(title: "Pizza History")
+            SelectedImageView(image:"1_100w")
+                .padding(5)
             HistoryListView()
         }
     }
