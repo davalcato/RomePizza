@@ -19,6 +19,10 @@ struct PageTitleView: View {
             
         }.overlay(
             Image(systemName:"chevron.up.square")
+                .font(.title)
+            .padding()
+            ,alignment: .trailing
+            
         
         )
     }
