@@ -10,7 +10,7 @@ import SwiftUI
 
 struct PageTitleView: View {
     var title:String
-    var isDisplayingOrders:Bool!
+    var isDisplayingOrders:Bool! = nil
     
     var body: some View {
         HStack {
@@ -22,7 +22,7 @@ struct PageTitleView: View {
                 .padding(.trailing)
             
         }.overlay(
-            Image(systemName:"chevron.up.square")
+            Image(systemName:isDisplayingOrders ?? false ? "chevron.up.square": "chevron.down.square")
                 .font(.title)
             .padding()
             ,alignment: .leading
