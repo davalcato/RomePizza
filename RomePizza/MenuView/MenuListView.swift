@@ -15,6 +15,7 @@ struct MenuListView: View {
             ListHeaderView(text: "Menu")
             List(menuList) { item in
                 MenuRowView()
+                Text(item.name)
             }
         }
     }
@@ -23,6 +24,7 @@ struct MenuListView: View {
 struct MenuListView_Previews: PreviewProvider {
     static var previews: some View {
         MenuListView()
+        
     }
 }
 
