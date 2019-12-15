@@ -9,12 +9,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isMenuDisplayed:Bool = true
+    
     var body: some View {
         VStack {
             
             ContentHeaderView()
                 .layoutPriority(2)
-            PageTitleView(title: "Order Pizza")
+            
+            Button(action:{}){
+                PageTitleView(title: "Order Pizza")
+            }
+            Spacer()
             MenuListView()
             .layoutPriority(1)
             OrderListView()
