@@ -24,6 +24,7 @@ struct PageTitleView: View {
         }.overlay(
             Image(systemName:isDisplayingOrders ?? false ? "chevron.up.square": "chevron.down.square")
                 .font(.title)
+                .foregroundColor(isDisplayingOrders != nil ? Color("G1") : .clear)
             .padding()
             ,alignment: .leading
             
