@@ -15,6 +15,7 @@ struct MenuListView: View {
             ListHeaderView(text: "Menu")
             List(menuList) { item in
                 MenuRowView(menuItem: item)
+                .listRowInsets(EdgeInsets())
                 
             }
         }
