@@ -10,6 +10,8 @@ import SwiftUI
 
 struct PageTitleView: View {
     var title:String
+    var isDisplayingOrders:Bool!
+    
     var body: some View {
         HStack {
             
