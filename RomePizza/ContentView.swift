@@ -18,7 +18,7 @@ struct ContentView: View {
                 .layoutPriority(2)
             
             Button(action:{self.isMenuDisplayed.toggle()}){
-                PageTitleView(title: "Order Pizza")
+                PageTitleView(title: "Order Pizza", isDisplayingOrders: isMenuDisplayed)
             }
             Spacer()
             MenuListView()
