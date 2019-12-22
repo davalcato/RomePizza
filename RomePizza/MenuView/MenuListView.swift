@@ -20,6 +20,7 @@ struct MenuListView: View {
                             .listRowInsets(EdgeInsets())
                     }
                 }
+            .navigationBarTitle("Pizza Order")
             }
         }
     }
