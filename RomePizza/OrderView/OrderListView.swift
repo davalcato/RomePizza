@@ -13,7 +13,7 @@ struct OrderListView: View {
     var body: some View {
         VStack {
             Spacer()
-            ListHeaderView(text: "Your Order")
+            ListHeaderView(orderModel: orderModel,text: "Your Order")
             List(orderModel.orders){ item in
                 OrderRowView(orderItem:item)
             }
