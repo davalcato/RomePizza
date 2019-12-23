@@ -21,15 +21,21 @@ struct OrderListView: View {
                 ){  ForEach(orderModel.orders){item in
                         OrderRowView(orderItem:item)
                 }
+                .onDelete(perform: delete)
+                }
             }
         }
     }
+    func delete(at offsets:IndexSet){
+        
+    }
+    
 }
 
 struct OrderListView_Previews: PreviewProvider {
     static var previews: some View {
         OrderListView(orderModel:OrderModel())
+        }
     }
-}
 
 
