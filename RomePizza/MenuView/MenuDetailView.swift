@@ -68,8 +68,8 @@ struct MenuDetailView: View {
                         .foregroundColor(Color("IP"))
                         .cornerRadius(5)
                 }
-                .alert(isPresented: $didOrder){
-                    Alert(title: Text("Pizza Ordered"), message: Text("You ordered a " + self.menuItem.name))
+//                .alert(isPresented: $didOrder){
+//                    Alert(title: Text("Pizza Ordered"), message: Text("You ordered a " + self.menuItem.name))
                 }
                 Spacer()
             }
