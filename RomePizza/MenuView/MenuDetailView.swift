@@ -16,7 +16,8 @@ struct MenuDetailView: View {
     @State var quantity:Int = 1
     var menuItem:MenuItem
     var formattedPrice:String{
-        String(format:"%3.2f",menuItem.price * Double(quantity))
+        String(format:"%3.2f",menuItem.price * Double(quantity)
+            * settings.size.rawValue)
     }
     func addItem(){
 //        orderModel.add(menuID: menuItem.id)
