@@ -12,9 +12,10 @@ struct MenuDetailView: View {
     @EnvironmentObject var settings:UserPreferences
     @ObservedObject var orderModel:OrderModel
     @State var didOrder:Bool = false
+    @State var quantity:Int = 1
     var menuItem:MenuItem
     var formattedPrice:String{
-        String(format:"%3.2f",menuItem.price)
+        String(format:"%3.2f",menuItem.price * Double(quantity))
     }
     func addItem(){
 //        orderModel.add(menuID: menuItem.id)
@@ -42,12 +43,18 @@ struct MenuDetailView: View {
                 Text(settings.size.formatted())
             }
             .font(.headline)
-            HStack{
-                Text("Quantity:")
-                Text("1")
-                    .bold()
-                Spacer()
+            Stepper(value:$quantity, in:1...10){
+                Text("Quantity: \(quantity)")
+                .bold()
+                
             }
+                
+//            HStack{
+//                Text("Quantity:")
+//                Text("1")
+//                    .bold()
+//                Spacer()
+//            }
             .padding()
             HStack{
                 Text("Order:  \(formattedPrice)")
