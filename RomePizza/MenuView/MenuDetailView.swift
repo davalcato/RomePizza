@@ -11,6 +11,7 @@ import SwiftUI
 struct MenuDetailView: View {
     @EnvironmentObject var settings:UserPreferences
     @ObservedObject var orderModel:OrderModel
+    @State var didOrder:Bool = false
     var menuItem:MenuItem
     var formattedPrice:String{
         String(format:"%3.2f",menuItem.price)
