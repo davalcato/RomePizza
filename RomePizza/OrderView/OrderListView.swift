@@ -27,7 +27,7 @@ struct OrderListView: View {
         }
     }
     func delete(at offsets:IndexSet){
-        
+        orderModel.orders.remove(atOffsets: offsets)
     }
     
 }
