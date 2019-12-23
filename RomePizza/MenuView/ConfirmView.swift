@@ -22,7 +22,7 @@ struct ConfirmView: View {
     }
     
     func addItem(){
-        orderModel.add(menuID: menuID,size: size, quantity: quantity)
+        orderModel.add(menuID: menuID,size: size, quantity: quantity,comments:comments )
         isPresented = false
     }
     
@@ -39,6 +39,7 @@ struct ConfirmView: View {
             Text("Confirm your order of \(quantity) \(size.formatted()) \(name) pizza")
                 .font(.headline)
             TextField("Add your comments here", text: $comments)
+                .background(Color("G4"))
             Spacer()
             Button(action: addItem){
                 Text("Add")
