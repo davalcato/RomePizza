@@ -14,6 +14,8 @@ struct ConfirmView: View {
     @ObservedObject var orderModel:OrderModel
     @Binding var quantity:Int
     @Binding var size:Size
+    @State var comments:String = ""
+    
     ///extracts the menu item name based on `menuID`
     var name:String{
         orderModel.menu(menuID)?.name ?? ""
@@ -36,6 +38,7 @@ struct ConfirmView: View {
             Divider()
             Text("Confirm your order of \(quantity) \(size.formatted()) \(name) pizza")
                 .font(.headline)
+            TextField("Add your comments here", text: $comments)
             Spacer()
             Button(action: addItem){
                 Text("Add")
