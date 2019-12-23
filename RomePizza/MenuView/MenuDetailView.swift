@@ -87,7 +87,7 @@ struct MenuDetailView: View {
 //                    Alert(title: Text("Pizza Ordered"), message: Text("You ordered a " + self.menuItem.name))
 //                }
                     .sheet(isPresented: $didOrder){
-                        ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel: self.orderModel, quantity:self.$quantity)
+                        ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel: self.orderModel, quantity:self.$quantity, size:self.$settings.size)
                     }
                 Spacer()
             }
