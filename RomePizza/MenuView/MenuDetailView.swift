@@ -18,7 +18,7 @@ struct MenuDetailView: View {
     }
     func addItem(){
         orderModel.add(menuID: menuItem.id)
-        
+        didOrder = true
     }
     
 
@@ -67,6 +67,9 @@ struct MenuDetailView: View {
                     .background(Color("G4"))
                         .foregroundColor(Color("IP"))
                         .cornerRadius(5)
+                }
+                .alert(isPresented: $didOrder){
+                    Alert(title: Text("Pizza Ordered"), message: Text("You ordered a " + self.menuItem.name))
                 }
                 Spacer()
             }
