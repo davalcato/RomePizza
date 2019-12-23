@@ -39,31 +39,8 @@ struct MenuDetailView: View {
                 .layoutPriority(3)
                 
             Spacer()
-            Picker(selection:$settings.size, label:Text("Pizza Size")){
-                ForEach(sizes, id: \.self){ size in
-                    Text(size.formatted()).tag(size)
-                    
-                }
-            }
-        .pickerStyle(SegmentedPickerStyle())
-//            HStack{
-//                Spacer()
-//                Text("Pizza size")
-//                Text(settings.size.formatted())
-//            }
-                
-            .font(.headline)
-            Stepper(value:$quantity, in:1...10){
-                Text("Quantity: \(quantity)")
-            }
-                
-//            HStack{
-//                Text("Quantity:")
-//                Text("1")
-//                    .bold()
-//                Spacer()
-//            }
-            .padding()
+            SizePickerView()
+            QuantityStepperView(quantity: $quantity)
             HStack{
                 Text("Order:  \(formattedPrice)")
                     .font(.headline)
@@ -101,5 +78,31 @@ struct MenuDetailView: View {
 struct MenuDetailView_Previews: PreviewProvider {
     static var previews: some View {
         MenuDetailView(orderModel:OrderModel(),menuItem: testMenuItem)
+    }
+}
+
+struct QuantityStepperView: View {
+    @Binding var quantity:Int
+    var body: some View {
+        Stepper(value:$quantity, in:1...10){
+            Text("Quantity: \(quantity)")
+        }
+           
+            .padding()
+    }
+}
+
+struct SizePickerView: View {
+    @Binding var size:Size
+    var body: some View {
+        Picker(selection:$size, label:Text("Pizza Size")){
+            ForEach(sizes, id: \.self){ size in
+                Text(size.formatted()).tag(size)
+                
+            }
+        }
+        .pickerStyle(SegmentedPickerStyle())
+            
+        .font(.headline)
     }
 }
