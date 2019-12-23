@@ -43,8 +43,8 @@ struct MenuDetailView: View {
                     Text(size.formatted()).tag(size)
                     
                 }
-                
             }
+        .pickerStyle(SegmentedPickerStyle())
 //            HStack{
 //                Spacer()
 //                Text("Pizza size")
