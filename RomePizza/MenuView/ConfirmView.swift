@@ -22,7 +22,7 @@ struct ConfirmView: View {
     }
     
     func addItem(){
-        orderModel.add(menuID: menuID,size: size, quantity: quantity,comments:comments )
+        orderModel.add(menuID: menuID,size: size, quantity: quantity,comments:comments)
         isPresented = false
     }
     

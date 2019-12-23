@@ -12,13 +12,14 @@ struct OrderListView: View {
     var orderModel:OrderModel
     var body: some View {
         VStack {
-            Spacer()
             
             List{
                 Section(
-                    header: ListHeaderView(orderModel: self.orderModel,text: "Your Order")
+                        
+                        header: ListHeaderView(orderModel: self.orderModel,text: "Your Order")
                     
-                ){  ForEach(orderModel.orders){item in
+                ){
+                    ForEach(orderModel.orders){item in
                         OrderRowView(orderItem:item)
                 }
                 .onDelete(perform: delete)
