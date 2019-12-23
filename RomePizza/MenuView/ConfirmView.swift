@@ -12,14 +12,14 @@ struct ConfirmView: View {
     var menuID:Int
     @Binding var isPresented:Bool
     @ObservedObject var orderModel:OrderModel
-    
+    @Binding var quantity:Int
     ///extracts the menu item name based on `menuID`
     var name:String{
         orderModel.menu(menuID)?.name ?? ""
     }
     
     func addItem(){
-        orderModel.add(menuID: menuID)
+        orderModel.add(menuID: menuID, quantity: quantity)
         isPresented = false
     }
     
