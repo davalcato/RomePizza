@@ -52,6 +52,7 @@ struct ConfirmView: View {
                 .font(.headline)
             TextField("Add your comments here", text: $comments)
                 .background(Color("G4"))
+            SizePickerView(size: $size)
             QuantityStepperView(quantity: $quantity)
             Spacer()
             HStack {
