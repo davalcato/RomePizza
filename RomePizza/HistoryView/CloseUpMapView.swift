@@ -15,6 +15,7 @@ struct CloseUpMapView: View {
     var body: some View {
         VStack{
             PageTitleView(title: historyItem.name)
+            MapViewControllerWrapper(latitude: self.historyItem.latitude, longitude: self.historyItem.longitude, regionRadius: 100)
         }
     }
 }
