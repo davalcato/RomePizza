@@ -11,11 +11,13 @@ import MapKit
 
 /// A view to present a view controller and add a Swift UI title and dismiss button.
 struct CloseUpMapView: View {
+    @Binding var isMapPresented:Bool
     var historyItem:HistoryItem
     var body: some View {
         VStack{
             PageTitleView(title: historyItem.name)
             MapViewControllerWrapper(latitude: self.historyItem.latitude, longitude: self.historyItem.longitude, regionRadius: 100)
+            DismissButton(isPresented: $isMapPresented)
         }
     }
 }
