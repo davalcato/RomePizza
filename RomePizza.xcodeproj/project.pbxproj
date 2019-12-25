@@ -31,6 +31,7 @@
 		757209EB23B187CF000AAE1B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757209EA23B187CF000AAE1B /* MapView.swift */; };
 		757209ED23B1900E000AAE1B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757209EC23B1900E000AAE1B /* MapViewController.swift */; };
 		7593073023A5861800C59A94 /* SelectedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7593072F23A5861800C59A94 /* SelectedImageView.swift */; };
+		759694D023B3E0CE000A8F71 /* CloseUpMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759694CF23B3E0CE000A8F71 /* CloseUpMapView.swift */; };
 		75AC1F5223A6C9AB00B76ADC /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AC1F4F23A6C9AB00B76ADC /* OrderModel.swift */; };
 		75AC1F5323A6C9AB00B76ADC /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AC1F5023A6C9AB00B76ADC /* MenuModel.swift */; };
 		75AC1F5423A6C9AB00B76ADC /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AC1F5123A6C9AB00B76ADC /* HistoryModel.swift */; };
@@ -63,6 +64,7 @@
 		757209EA23B187CF000AAE1B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		757209EC23B1900E000AAE1B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "../../../../Downloads/Ex_Files_SwiftUI_EssT/Exercise Files/06/01/MapViewController.swift"; sourceTree = "<group>"; };
 		7593072F23A5861800C59A94 /* SelectedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedImageView.swift; sourceTree = "<group>"; };
+		759694CF23B3E0CE000A8F71 /* CloseUpMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseUpMapView.swift; sourceTree = "<group>"; };
 		75AC1F4F23A6C9AB00B76ADC /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		75AC1F5023A6C9AB00B76ADC /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		75AC1F5123A6C9AB00B76ADC /* HistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		756F34D723984CE000EEE197 /* HistoryView */ = {
 			isa = PBXGroup;
 			children = (
+				759694CF23B3E0CE000A8F71 /* CloseUpMapView.swift */,
 				757209EA23B187CF000AAE1B /* MapView.swift */,
 				757209EC23B1900E000AAE1B /* MapViewController.swift */,
 				756F34E9239B337700EEE197 /* HistoryRowView.swift */,
@@ -259,6 +262,7 @@
 				75AC1F5223A6C9AB00B76ADC /* OrderModel.swift in Sources */,
 				756F34F0239B3A1F00EEE197 /* ListHeaderView.swift in Sources */,
 				756F34E62398581200EEE197 /* RatingsView.swift in Sources */,
+				759694D023B3E0CE000A8F71 /* CloseUpMapView.swift in Sources */,
 				756F34E42398579300EEE197 /* MenuRowView.swift in Sources */,
 				756F34C623948BF500EEE197 /* SceneDelegate.swift in Sources */,
 				756F34EC239B346F00EEE197 /* HistoryListView.swift in Sources */,
