@@ -1,0 +1,6 @@
+framework module Pods_RomePizza {
+  umbrella header "Pods-RomePizza-umbrella.h"
+
+  export *
+  module * { export * }
+}
