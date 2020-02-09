@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67E05E998822802ADAF237D6 /* Pods_RomePizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E421E1D3FE17381084FB1B85 /* Pods_RomePizza.framework */; };
 		756C5B3523AEF543009371EB /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C5B3423AEF543009371EB /* MenuDetailView.swift */; };
 		756C5B3723B014E5009371EB /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C5B3623B014E4009371EB /* HistoryDetailView.swift */; };
 		756C5B3923B01B0A009371EB /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C5B3823B01B0A009371EB /* RootTabView.swift */; };
@@ -35,9 +36,12 @@
 		75AC1F5323A6C9AB00B76ADC /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AC1F5023A6C9AB00B76ADC /* MenuModel.swift */; };
 		75AC1F5423A6C9AB00B76ADC /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AC1F5123A6C9AB00B76ADC /* HistoryModel.swift */; };
 		75C2938823F0A2B60094BD7F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2938723F0A2B60094BD7F /* MapViewController.swift */; };
+		75C2938A23F0ABF20094BD7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75C2938923F0ABF20094BD7F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FA2E4BE1D440E3E6BD7E8F2 /* Pods-RomePizza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RomePizza.debug.xcconfig"; path = "Target Support Files/Pods-RomePizza/Pods-RomePizza.debug.xcconfig"; sourceTree = "<group>"; };
+		30D86FDD20C1C838AC073E92 /* Pods-RomePizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RomePizza.release.xcconfig"; path = "Target Support Files/Pods-RomePizza/Pods-RomePizza.release.xcconfig"; sourceTree = "<group>"; };
 		756C5B3423AEF543009371EB /* MenuDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
 		756C5B3623B014E4009371EB /* HistoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
 		756C5B3823B01B0A009371EB /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		75AC1F5023A6C9AB00B76ADC /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		75AC1F5123A6C9AB00B76ADC /* HistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		75C2938723F0A2B60094BD7F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "../../../RomePizza-master/RomePizza/HistoryView/MapViewController.swift"; sourceTree = "<group>"; };
+		75C2938923F0ABF20094BD7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E421E1D3FE17381084FB1B85 /* Pods_RomePizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RomePizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,17 +81,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E05E998822802ADAF237D6 /* Pods_RomePizza.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FF8248F17EC236827CEADA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FA2E4BE1D440E3E6BD7E8F2 /* Pods-RomePizza.debug.xcconfig */,
+				30D86FDD20C1C838AC073E92 /* Pods-RomePizza.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		756F34B723948BF500EEE197 = {
 			isa = PBXGroup;
 			children = (
 				756F34C223948BF500EEE197 /* RomePizza */,
 				756F34C123948BF500EEE197 /* Products */,
+				6FF8248F17EC236827CEADA0 /* Pods */,
+				DE9E8921C61E96AB0659B0C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +133,7 @@
 				7593072F23A5861800C59A94 /* SelectedImageView.swift */,
 				756F34CE23948BF900EEE197 /* LaunchScreen.storyboard */,
 				756F34D123948BF900EEE197 /* Info.plist */,
+				75C2938923F0ABF20094BD7F /* GoogleService-Info.plist */,
 				756F34CB23948BF900EEE197 /* Preview Content */,
 			);
 			path = RomePizza;
@@ -173,6 +192,14 @@
 			path = OrderView;
 			sourceTree = "<group>";
 		};
+		DE9E8921C61E96AB0659B0C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E421E1D3FE17381084FB1B85 /* Pods_RomePizza.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 756F34D423948BF900EEE197 /* Build configuration list for PBXNativeTarget "RomePizza" */;
 			buildPhases = (
+				B1E1F23C722F574CE5D511EE /* [CP] Check Pods Manifest.lock */,
 				756F34BC23948BF500EEE197 /* Sources */,
 				756F34BD23948BF500EEE197 /* Frameworks */,
 				756F34BE23948BF500EEE197 /* Resources */,
+				1CC8A1E528D90C1D24DE420A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,12 +261,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				756F34D023948BF900EEE197 /* LaunchScreen.storyboard in Resources */,
+				75C2938A23F0ABF20094BD7F /* GoogleService-Info.plist in Resources */,
 				756F34CD23948BF900EEE197 /* Preview Assets.xcassets in Resources */,
 				756F34CA23948BF900EEE197 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CC8A1E528D90C1D24DE420A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RomePizza/Pods-RomePizza-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RomePizza/Pods-RomePizza-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RomePizza/Pods-RomePizza-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1E1F23C722F574CE5D511EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RomePizza-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		756F34BC23948BF500EEE197 /* Sources */ = {
@@ -402,6 +474,7 @@
 		};
 		756F34D523948BF900EEE197 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FA2E4BE1D440E3E6BD7E8F2 /* Pods-RomePizza.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -423,6 +496,7 @@
 		};
 		756F34D623948BF900EEE197 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D86FDD20C1C838AC073E92 /* Pods-RomePizza.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
