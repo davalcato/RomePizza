@@ -37,6 +37,7 @@
 		75AC1F5423A6C9AB00B76ADC /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AC1F5123A6C9AB00B76ADC /* HistoryModel.swift */; };
 		75C2938823F0A2B60094BD7F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2938723F0A2B60094BD7F /* MapViewController.swift */; };
 		75C2938A23F0ABF20094BD7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75C2938923F0ABF20094BD7F /* GoogleService-Info.plist */; };
+		75C2938C23F0AD610094BD7F /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2938B23F0AD600094BD7F /* SessionStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		75AC1F5123A6C9AB00B76ADC /* HistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		75C2938723F0A2B60094BD7F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "../../../RomePizza-master/RomePizza/HistoryView/MapViewController.swift"; sourceTree = "<group>"; };
 		75C2938923F0ABF20094BD7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		75C2938B23F0AD600094BD7F /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		E421E1D3FE17381084FB1B85 /* Pods_RomePizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RomePizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 				756F34D823984CF500EEE197 /* Model */,
 				756F34D723984CE000EEE197 /* HistoryView */,
 				756F34C323948BF500EEE197 /* AppDelegate.swift */,
+				75C2938B23F0AD600094BD7F /* SessionStore.swift */,
 				756F34C523948BF500EEE197 /* SceneDelegate.swift */,
 				756F34C923948BF900EEE197 /* Assets.xcassets */,
 				7593072F23A5861800C59A94 /* SelectedImageView.swift */,
@@ -316,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C2938C23F0AD610094BD7F /* SessionStore.swift in Sources */,
 				756F34C423948BF500EEE197 /* AppDelegate.swift in Sources */,
 				757209EB23B187CF000AAE1B /* MapView.swift in Sources */,
 				756F34EA239B337700EEE197 /* HistoryRowView.swift in Sources */,
