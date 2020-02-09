@@ -9,12 +9,28 @@
 import SwiftUI
 
 struct SignInView: View {
+    @State var email: String = ""
+    @State var password: String = ""
+    @State var error: String = ""
+    @EnvironmentObject var session: SessionStore
+    
+    func signIn() {
+        session.signIn(email: email, password: password) { (result, error) in
+            if let error = error {
+                self.error = error.localizedDescription
+            } else {
+                self.email = ""
+                self.password = ""
+            }
+        }
+        
+    }
+    
     var body: some View {
         VStack {
             Text("Sign in view")
             
         }
-        
     }
 }
 
