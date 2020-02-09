@@ -9,10 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var session: SessionStore
     @ObservedObject var orderModel:OrderModel
     @State var isMenuDisplayed:Bool = true
     
+    
     var body: some View {
+        
         VStack {
             
 //            ContentHeaderView()

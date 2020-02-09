@@ -38,6 +38,7 @@
 		75C2938823F0A2B60094BD7F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2938723F0A2B60094BD7F /* MapViewController.swift */; };
 		75C2938A23F0ABF20094BD7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75C2938923F0ABF20094BD7F /* GoogleService-Info.plist */; };
 		75C2938C23F0AD610094BD7F /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2938B23F0AD600094BD7F /* SessionStore.swift */; };
+		75C2938E23F0D1590094BD7F /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2938D23F0D1590094BD7F /* AuthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		75C2938723F0A2B60094BD7F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "../../../RomePizza-master/RomePizza/HistoryView/MapViewController.swift"; sourceTree = "<group>"; };
 		75C2938923F0ABF20094BD7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75C2938B23F0AD600094BD7F /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		75C2938D23F0D1590094BD7F /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		E421E1D3FE17381084FB1B85 /* Pods_RomePizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RomePizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -170,6 +172,7 @@
 				75AC1F5123A6C9AB00B76ADC /* HistoryModel.swift */,
 				75AC1F5023A6C9AB00B76ADC /* MenuModel.swift */,
 				75AC1F4F23A6C9AB00B76ADC /* OrderModel.swift */,
+				75C2938D23F0D1590094BD7F /* AuthView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				756C5B3523AEF543009371EB /* MenuDetailView.swift in Sources */,
 				75AC1F5423A6C9AB00B76ADC /* HistoryModel.swift in Sources */,
 				756F34DE23984F1500EEE197 /* MenuListView.swift in Sources */,
+				75C2938E23F0D1590094BD7F /* AuthView.swift in Sources */,
 				756F34E823985A2300EEE197 /* PageTitleView.swift in Sources */,
 				75C2938823F0A2B60094BD7F /* MapViewController.swift in Sources */,
 				756C5B3923B01B0A009371EB /* RootTabView.swift in Sources */,
