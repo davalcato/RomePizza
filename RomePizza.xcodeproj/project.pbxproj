@@ -104,6 +104,7 @@
 		756F34B723948BF500EEE197 = {
 			isa = PBXGroup;
 			children = (
+				75C2938F23F0D4860094BD7F /* LogIn */,
 				756F34C223948BF500EEE197 /* RomePizza */,
 				756F34C123948BF500EEE197 /* Products */,
 				6FF8248F17EC236827CEADA0 /* Pods */,
@@ -132,7 +133,6 @@
 				756F34D823984CF500EEE197 /* Model */,
 				756F34D723984CE000EEE197 /* HistoryView */,
 				756F34C323948BF500EEE197 /* AppDelegate.swift */,
-				75C2938B23F0AD600094BD7F /* SessionStore.swift */,
 				756F34C523948BF500EEE197 /* SceneDelegate.swift */,
 				756F34C923948BF900EEE197 /* Assets.xcassets */,
 				7593072F23A5861800C59A94 /* SelectedImageView.swift */,
@@ -172,7 +172,6 @@
 				75AC1F5123A6C9AB00B76ADC /* HistoryModel.swift */,
 				75AC1F5023A6C9AB00B76ADC /* MenuModel.swift */,
 				75AC1F4F23A6C9AB00B76ADC /* OrderModel.swift */,
-				75C2938D23F0D1590094BD7F /* AuthView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,6 +195,15 @@
 				756F34E1239856EB00EEE197 /* OrderRowView.swift */,
 			);
 			path = OrderView;
+			sourceTree = "<group>";
+		};
+		75C2938F23F0D4860094BD7F /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				75C2938D23F0D1590094BD7F /* AuthView.swift */,
+				75C2938B23F0AD600094BD7F /* SessionStore.swift */,
+			);
+			path = LogIn;
 			sourceTree = "<group>";
 		};
 		DE9E8921C61E96AB0659B0C0 /* Frameworks */ = {
