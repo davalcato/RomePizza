@@ -28,8 +28,26 @@ struct SignInView: View {
     
     var body: some View {
         VStack {
-            Text("Sign in view")
+            Text("Welcome Back!")
+                .font(.system(size: 32, weight: .heavy))
             
+            Text("Sign in to continue")
+                .font(.system(size: 16, weight: .medium))
+//            .foregroundColor(Color("Black"))
+  
+            
+            VStack(spacing: 18) {
+                TextField("Email address", text: $email)
+                    .font(.system(size: 14))
+                .padding(12)
+                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("bgi"), lineWidth: 1))
+                
+                SecureField("Password", text: $password)
+                    .font(.system(size: 14))
+                    .padding(12)
+                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("bgi"), lineWidth: 1))
+
+            }
         }
     }
 }
