@@ -40,13 +40,26 @@ struct SignInView: View {
                 TextField("Email address", text: $email)
                     .font(.system(size: 14))
                 .padding(12)
-                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("bgi"), lineWidth: 1))
+                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("bg1"), lineWidth: 1))
                 
                 SecureField("Password", text: $password)
                     .font(.system(size: 14))
                     .padding(12)
-                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("bgi"), lineWidth: 1))
+                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("bg1"), lineWidth: 1))
 
+            }
+            .padding(.vertical, 64)
+            
+            Button(action: signIn) {
+                Text("Sign in")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .frame(height: 50)
+                    .foregroundColor(.white)
+                    .font(.system(size: 14, weight: .bold))
+                    .background(LinearGradient(gradient: Gradient(colors: [Color("bg1"), Color("bg2")]), startPoint: .leading, endPoint: .trailing))
+                
+//                    .background(LinearGradient(gradient: Gradient(colors: [Color("bgi"), Color("bg2")]), startPoint: .leading, endPoint: .trailing))
+                
             }
         }
     }
