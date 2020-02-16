@@ -79,7 +79,9 @@ struct SignInView: View {
                         .font(.system(size: 14, weight: .light))
                         .foregroundColor(.primary)
                     
-                    
+                    Text("Create an account")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundColor(.blue)
                 }
             }
         }
