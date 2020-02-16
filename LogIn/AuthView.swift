@@ -72,9 +72,27 @@ struct SignInView: View {
             }
             
             Spacer()
+            
+            NavigationLink(destination: SignUpView()) {
+                HStack {
+                    Text("I'm a new user.")
+                        .font(.system(size: 14, weight: .light))
+                        .foregroundColor(.primary)
+                    
+                    
+                }
+            }
         }
         
         .padding(.horizontal, 32)
+    }
+}
+
+struct SignUpView: View {
+    var body: some View {
+        VStack {
+            Text("Sign UP view")
+        }
     }
 }
 
