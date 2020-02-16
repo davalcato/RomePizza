@@ -97,13 +97,22 @@ struct SignUpView: View {
     @EnvironmentObject var session: SessionStore
     
     func signUp() {
-        
-        
+        session.signUp(email: email, password: password) { (result, error) in
+            if let error = error {
+                self.error = error.localizedDescription
+                
+            } else {
+                self.email = ""
+                self.password = ""
+                
+            }
+        }
     }
     
     var body: some View {
         VStack {
-            Text("Sign UP view")
+            Text("Create Account")
+                .font(.system(size: 32, weight: .heavy))
         }
     }
 }
