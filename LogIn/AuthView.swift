@@ -139,8 +139,19 @@ struct SignUpView: View {
                 .font(.system(size: 14, weight: .bold))
                 .foregroundColor(.clear)
                 .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.purple]), startPoint: .top, endPoint: .bottom))
+                .cornerRadius(5)
             }
+            
+            if (error != "") {
+            Text(error)
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundColor(.red)
+                .padding()
         }
+            
+            Spacer()
+        }.padding(.horizontal, 32)
+        
     }
 }
 
@@ -157,3 +168,4 @@ struct AuthView_Previews: PreviewProvider {
         AuthView().environmentObject(SessionStore())
     }
 }
+
