@@ -73,6 +73,8 @@ struct SignInView: View {
             
             Spacer()
         }
+        
+        .padding(.horizontal, 32)
     }
 }
 
