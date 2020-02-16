@@ -113,6 +113,33 @@ struct SignUpView: View {
         VStack {
             Text("Create Account")
                 .font(.system(size: 32, weight: .heavy))
+            
+            Text("Sign up to get started")
+            .font(.system(size: 18, weight: .medium))
+                .foregroundColor(.gray)
+            
+            VStack(spacing: 18) {
+                TextField("Email address", text: $email)
+                    .font(.system(size: 14))
+                .padding(12)
+                .background(RoundedRectangle(cornerRadius: 5).stroke(Color.gray, lineWidth: 1))
+                
+                SecureField("Password", text: $password)
+                .font(.system(size: 14))
+                .padding(12)
+                .background(RoundedRectangle(cornerRadius: 5).stroke(Color.gray, lineWidth: 1))
+                
+            }.padding(.vertical, 64)
+            
+            Button(action: signUp) {
+                Text("Create Account")
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .frame(height: 50)
+                .foregroundColor(.white)
+                .font(.system(size: 14, weight: .bold))
+                .foregroundColor(.clear)
+                .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.purple]), startPoint: .top, endPoint: .bottom))
+            }
         }
     }
 }
