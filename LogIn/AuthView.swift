@@ -91,6 +91,16 @@ struct SignInView: View {
 }
 
 struct SignUpView: View {
+    @State var email: String = ""
+    @State var password: String = ""
+    @State var error: String = ""
+    @EnvironmentObject var session: SessionStore
+    
+    func signUp() {
+        
+        
+    }
+    
     var body: some View {
         VStack {
             Text("Sign UP view")
@@ -101,7 +111,7 @@ struct SignUpView: View {
 struct AuthView: View {
     var body: some View {
         NavigationView {
-            SignInView()
+            SignUpView()
         }
     }
 }
