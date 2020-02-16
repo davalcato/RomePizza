@@ -40,12 +40,14 @@ struct SignInView: View {
                 TextField("Email address", text: $email)
                     .font(.system(size: 14))
                     .padding(12)
-                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("bg1"), lineWidth: 1))
+                    .background(RoundedRectangle(cornerRadius: 5).stroke(Color.gray, lineWidth: 1))
+                    .shadow(radius: 5)
                 
                 SecureField("Password", text: $password)
                     .font(.system(size: 14))
                     .padding(12)
-                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("bg1"), lineWidth: 1))
+                    .background(RoundedRectangle(cornerRadius: 5).stroke(Color.gray, lineWidth: 1))
+                    .shadow(radius: 5)
 
             }
             .padding(.vertical, 64)
