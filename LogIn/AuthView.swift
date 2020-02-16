@@ -58,7 +58,8 @@ struct SignInView: View {
                     .frame(height: 50)
                     .foregroundColor(.white)
                     .font(.system(size: 14, weight: .bold))
-                    .background(LinearGradient(gradient: Gradient(colors: [Color("bg1"), Color("bg2")]), startPoint: .leading, endPoint: .trailing))
+                    .foregroundColor(.clear)
+                    .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.purple]), startPoint: .top, endPoint: .bottom))
             }
         }
     }
