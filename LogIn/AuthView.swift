@@ -62,6 +62,16 @@ struct SignInView: View {
                     .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.purple]), startPoint: .top, endPoint: .bottom))
                 .cornerRadius(5)
             }
+            
+            if (error != "") {
+                Text(error)
+                    .font(.system(size: 14, weight: .semibold))
+                    .padding()
+                
+                
+            }
+            
+            Spacer()
         }
     }
 }
